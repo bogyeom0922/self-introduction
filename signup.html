@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>SIGN UP</title>
+    <STYLE TYPE = "text/css">
+        BODY {background-color:#FBFAE1}
+        .font1 {font-family:"HY견고딕"; font-size:35pt; text-align:center; color:#F6C4BC; font-weight:600}
+        .font2 {font-family:"맑은고딕"; font-size:12pt; text-align:center}
+        .font3 {font-family:"맑은고딕"; font-size:6pt; text-align:center; line-height: 70%;}
+        .table1 {table-layout: fixed; border-collapse: collapse}
+        TABLE, TD {border: 2px solid #6B6B6B}
+        .position {position: absolute; top: 170pt; left: 320pt}
+    </STYLE>
+</head>
+
+<body TOPMARGIN="60">
+    <P CLASS="font1">SIGN UP</P>
+    <HR> <BR><BR>
+        <form action="main.html">
+            <TABLE WIDTH="650" HEIGHT="400" CELLPADING="5" class="table1 position">
+                <TR>
+                    <TD><p class="font2"> 아이디 </p></TD>
+                    <TD> <input type="text" name="textbox1"><br>
+                    <P CLASS="font3">  영문, 숫자 포함 </P> </TD>
+                </TR>
+                <TR>
+                    <TD><p class="font2"> 비밀번호 </p></TD>
+                    <TD> <input type="text" name="textbox2"> 
+                    <P CLASS="font3">  영문, 숫자, 특수문자 포함 </P> </TD>
+                </TR>
+                <TR>
+                    <TD><p class="font2"> 이름 </p></TD>
+                    <TD> <input type="text" name="textbox3"> </TD>
+                </TR>
+                <TR>
+                    <TD><p class="font2"> 성별 </p></TD>
+                    <TD> <input type="radio" name="btn" value="male" checked>남자&nbsp;&nbsp;
+                        <input type="radio" name="btn" value="female">여자
+                    </TD>
+                </TR>
+                <TR>
+                    <TD><p class="font2"> 전화번호 </p></TD>
+                    <TD> <select name = "tell">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>016</option>
+                        <option>017</option>
+                        <option>018</option>
+                        <option>019</option>
+                        <option>031</option>
+                        </select>
+                        - <input name="tel2" size="4"> 
+                        - <input name="tel3" size="4"> </TD>
+                </TR>
+                <TR>
+                    <TD><p class="font2"> 이메일 </p></TD>
+                    <TD> <input type="text" name="textbox1">@ <select name = "email">
+                        <option>naver.com</option>
+                        <option>gmail.com</option>
+                        <option>daum.net</option>
+                        <option>hanmail.net</option>
+                        <option>nate.com</option>
+                        <option>hotmail.com</option>
+                        <option>yahoo.co.kr</option>
+                        <option>kku.ac.kr</option>
+                        </select> </TD>
+                </TR>
+                <TR>
+                    <TD colspan="2"ALIGN="center">
+                        <INPUT type="submit" value="회원가입">&nbsp;&nbsp;
+                        <input type="reset" value="취소하기">
+                    </TD>
+                </TR>
+            </TABLE>
+        </form>
+</body>
+</html>
