@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title> Production_개발 </title>
+
+    <STYLE TYPE = "text/css">
+        BODY {background-color:#FBFAE1}
+        DIV {background-color: #FDFCF1}
+        .margin1 {margin-right: 30%; margin-left: 7%; height: 400pt; width:410pt}
+		.position1 {position:absolute; top: 45pt; left: 440pt}
+        .position2 {position:absolute; top: 45pt; left: 510pt}
+        .position3 {position:absolute; top: 45pt; left: 580pt}
+        .position4 {position:absolute; top: 45pt; left: 650pt}
+        .position5 {position: absolute; top: 160pt; left: 50pt}
+        .position6 {position: absolute; top: 160pt; left: 510pt}
+        .positionH {position: absolute; top: 30pt; right: 90pt}
+        .padding1 {padding-top: 1%; padding-left: 1%; padding-right: 1%}
+        .font1 {font-family:"HY견고딕"; font-size:17pt; text-align:left; color:#FCB2A9; font-weight:600; line-height: 170%}
+        .font2 {font-family:"HY견고딕"; font-size:15pt; text-align:left; color:#F16E88; font-weight:500; line-height: 170%}
+        .font3 {font-family:"맑은고딕"; font-size:12pt; text-align:left; color:#6B6B6B; line-height: 170%}
+        .font3 {font-family:"맑은고딕"; font-size:9pt; text-align:left; color:#6B6B6B; line-height: 150%}
+        .list1 {list-style-type: decimal}
+    </STYLE>
+</head>
+
+<body TOPMARGIN="50" LEFTMARGIN="170"  LINK="#58805F" ALINK = "#58805F" VLINK="#58805F">
+
+    <A HREF="plan.html" Target="_self"><img src="planX.JPG" width="74" CLASS="position1"></A>
+    <A HREF="design.html" Target="_self"><img src="designX.JPG" width="75" CLASS="position2"></A>
+    <A HREF="development.html" Target="_self"><img src="devO.JPG" width="75" CLASS="position3"></A>
+    <A HREF="test.html" Target="_self"><img src="testX.JPG" width="75" CLASS="position4"></A>
+
+    <A HREF="main.html" Target="_self"><img src="home.JPG" width="120" CLASS="positionH"></A><br><br><br><br><br><br><br><br><br>
+
+    <DIV CLASS="position5 margin1 padding1"> 
+        <P CLASS="font1">API 서버 개발</P>
+        <P CLASS="font3"> API = Application Programming Interface (클라이언트 앱과 서버 간의 통신 규약)
+            API 방식 : SOAP / RESTful(대부분 사용) , 데이터 포맷은 JSON이나 XML 사용 가능</P>
+        <OL CLASS="list1 font2">
+            <LI>인터페이스 설계</LI>
+            <P CLASS="font3">서버와 앱이 주고 받을 데이터와 인터페이스 설계해야함<BR>
+                인터페이스 목록이 정리되면 서버 개발과 앱 개발 진행<BR>
+                # 앱 개발 : 클라이언트 개발 or 프론트엔드 개발  /  서버 개발 : 백엔드 개발</P>
+            
+            <LI>DB 설계</LI>
+            <P CLASS="font3">DB : RDB(=관계형 데이터베이스) / NoSQL<BR>
+                RDB : 오라클, MySQL, MariaDB, PostgreSQL 등<BR>
+                NoSQL : Mongo DB, Couchbase, Cassandra, HBASE 등<BR>
+                관리할 데이터에 맞게 테이블 생성하고 정규화 작업 # 큰 규모의 프로젝트의 경우 DB전문가인 DBA의 도움을 받을 수 있음</P>
+            
+            <LI>개발 환경 세팅 및 개발 진행</LI>
+            <P CLASS="font3">[RESTful API 서버 프레임워크의 종류]<BR>
+                구축형 솔루션 : Sinatra, Grape, Rails<BR>
+                설치형 솔루션 : LoopBack<BR>
+                클라우드 솔루션 : Parse, Firebase</P>
+            </OL>
+        
+    </DIV>
+
+	<DIV CLASS="position6 margin1 padding1"> 
+        <P CLASS="font1">앱 개발</P>
+        <P CLASS="font3"> 앱 개발 목표 : 최대한 빠르게 프로토타입을 만드는 것
+            프로토타입은 간단한 화면을 만들고 타겟 디바이스에 빌드된 앱을 올려 API 서버와 데이터를 주고 받는 모듈 하나를 빠르게 완성하고 테스트
+            이를 통해 성능이나 다른 이슈가 있지는 확인</P>
+        <OL CLASS="list1 font2">
+            <LI>네이티브앱</LI>
+            <P CLASS="font3">구글의 안드로이드 스튜디오로 안드로이폰 개발, 애플의 XCode를 사용하여 아이폰용앱 개발</P>
+            
+            <LI>모바일웹앱</LI>
+            <P CLASS="font3">DB : RDB(=관계형 데이터베이스) / NoSQL<BR>
+                HTML5, CSS3 웹표준에 따른 웹으로 개발, 디자인과정외에 퍼블리싱 작업 필요, 웹브라우저에서 동작</P>
+            
+            <LI>하이브리드앱</LI>
+            <P CLASS="font3">기본 기능은 HTML5, CSS5 웹표준으로 개발하고, 패키징은 아이폰, 안드로이드 등 모바일 운영체제별로 구현하는 방식<BR>
+                개발방식은 Phone Gap, Cordova, ionic, react native 등의 개발플렛폼이 있으며 최근에는 react native 많이 사용</P>
+        </OL>
+    </DIV>
+</body>
+</html>

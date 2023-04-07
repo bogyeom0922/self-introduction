@@ -1,0 +1,47 @@
+<html> 
+<head>
+    <title> Production_디자인 </title>
+
+    <STYLE TYPE = "text/css">
+        BODY {background-color:#FBFAE1}
+		.position1 {position:absolute; top: 45pt; left: 440pt}
+        .position2 {position:absolute; top: 45pt; left: 510pt}
+        .position3 {position:absolute; top: 45pt; left: 580pt}
+        .position4 {position:absolute; top: 45pt; left: 650pt}
+        .positionH {position: absolute; top: 30pt; right: 90pt}
+        .font1 {font-family:"HY견고딕"; font-size:15pt; text-align:left; color:#F16E88; font-weight:600; line-height: 160%}
+        .font2 {font-family:"맑은고딕"; font-size:13pt; text-align:left; color:#6B6B6B; font-weight:500; line-height: 170%}
+        .font3 {font-family:"HY견고딕"; font-size:9pt; text-align:left; color:#FCB2A9; line-height: 150%}
+        .list1 {list-style-type: decimal}
+    </STYLE>
+</head>
+
+<body TOPMARGIN="50" LEFTMARGIN="170"  LINK="#FCB2A9" ALINK = "#FCB2A9" VLINK="#FCB2A9">
+
+    <A HREF="plan.html" Target="_self"><img src="planX.JPG" width="74" CLASS="position1"></A>
+    <A HREF="design.html" Target="_self"><img src="designX.JPG" width="75" CLASS="position2"></A>
+    <A HREF="development.html" Target="_self"><img src="devX.JPG" width="75" CLASS="position3"></A>
+    <A HREF="test.html" Target="_self"><img src="testO.JPG" width="75" CLASS="position4"></A>
+
+    <A HREF="main.html" Target="_self"><img src="home.JPG" width="120" CLASS="positionH"></A><br><br><br><br><br><br><br><br><br>
+    
+    <P CLASS="font1">테스트 명세서 정리</P>
+        <P CLASS="font2">테스트 : 단위 테스트, 3자 테스트, 통합 테스트, 사용자 테스트 (베타 테스트)<BR>
+            단위 테스트 - 기능 별로 작성, 개발 과정에서 기능이 완성될 때 마다 개발자가 직접 테스트<BR>
+            3자 테스트 - 개발자 본인이 아닌 동료 개발자 또는 다른 테스터에 의해 진행</P>
+    
+    <OL CLASS="list1 font1">   
+        <LI> 통합 테스트 </LI>
+        <P CLASS="font2">시나리오 기반으로 진행<BR>
+            앱의 설치부터 로그인, 화면 이동, 서버와의 데이터 통신 전반 점검</P>
+        
+        <LI> 디바이스 테스트 </LI>
+        <P CLASS="font2"> 타겟 디바이스에 앱 설치 후 테스트 진행 ( 앱 설치와 주요 기능 위주로 )<BR>
+            디바이스 확보가 어려운 경우에는 Genymotion 서비스 추천</P>
+        
+        <LI> 사용자 베타 테스트 </LI>
+        <P CLASS="font2"> 실제 사용자 중 일부에게 빌드된 앱을 발송하여 베타 테스트 진행<BR>
+            이 테스트를 통해 사용자의 의견을 취합하고 심각한 오류나 버그 수정</p>
+        </OL>
+</body>
+</html>
